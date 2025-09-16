@@ -1,0 +1,71 @@
+# 🤖 AI Project Sync Space
+
+🔗 **Live Demo:** https://multi-ai-tasking-et5hkwac3hfzmhtdiovufc.streamlit.app/
+
+---
+
+## 📌 About the Project
+AI Project Sync Space is a **multi-agent AI system** where:
+- A **Project Manager AI** breaks down a project into smaller tasks.
+- **Employee AIs** (Researcher, Writer, Editor) complete their assigned tasks.
+- The Project Manager collects the results and produces a **final combined deliverable**.
+
+✅ Runs fully online using **Streamlit + Hugging Face Spaces**.  
+✅ Supports both **free Hugging Face models** and **optional OpenAI API key** for GPT.  
+✅ Safe for public demos (no keys exposed).  
+
+---
+
+## 🧩 Workflow
+
+Here’s how the system works:
+
+1. User enters a project description.  
+2. Project Manager AI breaks it down into tasks.  
+3. Tasks are assigned to Employee AIs:
+   - Researcher → gathers insights.  
+   - Writer → drafts structured content.  
+   - Editor → polishes and refines.  
+4. Project Manager combines all employee outputs into a **final deliverable**.  
+5. User sees the entire process in the Streamlit dashboard.  
+
+---
+
+## 📊 Flowchart
+
+1. 🧑‍💻 **User Input** → Provide a project description.  
+2. 👔 **Project Manager AI** → Breaks it into tasks.  
+3. 👷 **Employee AIs** → Researcher, Writer, Editor each do their work.  
+4. 📦 **Results Collected** → Each AI sends back their piece.  
+5. 🤝 **Manager Combines** → Final output is polished and complete.  
+6. 🎉 **Delivered to User** → Displayed in the Streamlit dashboard.  
+Tech Stack
+
+Frontend/UI: Streamlit
+
+AI Models:
+
+Default → Hugging Face google/flan-t5-large (free, no key needed)
+
+Optional → OpenAI GPT (gpt-4o-mini) if user provides API key
+
+Hosting: Hugging Face Spaces
+
+Version Control: GitHub
+
+🚀 Run Locally
+
+Clone this repo:
+
+git clone https://github.com/YOUR_USERNAME/project-sync-space.git
+cd project-sync-space
+
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+
+Run Streamlit:
+
+streamlit run app.py
