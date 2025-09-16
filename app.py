@@ -65,9 +65,9 @@ class ProjectManagerAI:
         return generate_with_hf(prompt, 200)
 
 # ----- Streamlit UI -----
-st.set_page_config(page_title="AI Project Sync Space", layout="wide")
+st.set_page_config(page_title=" Sync Space", layout="wide")
 
-st.title("🤖 AI Project Sync Space")
+st.title("Sync Space")
 st.write("An AI Project Manager assigns tasks to AI Employees, collects results, and produces a final deliverable.")
 
 # User API key input
